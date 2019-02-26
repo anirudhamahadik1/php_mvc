@@ -1,0 +1,6 @@
+RewriteEngine on
+#If specified file in browser URL doesn't exist then proceed to rewrite rule.
+RewriteCond %{REQUEST_FILENAME} !-f
+#If specified directory in browser URL doesn't exist then proceed to rewrite rule.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?route=$1 [NC,L,QSA]

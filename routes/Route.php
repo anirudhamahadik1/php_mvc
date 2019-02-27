@@ -21,6 +21,11 @@ class Route{
             "controller" => "TestController",
             "method" => "testRead",
             "authcheck" => false
+        ),
+        "test/readfetchapi" => array(
+            "controller" => "TestController",
+            "method" => "testReadFetchAPI",
+            "authcheck" => false
         )
     );
 

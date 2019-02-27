@@ -29,5 +29,10 @@ class TestController{
 
         echo $this->request->responseJSON($result);
     }
+
+    public function testReadFetchAPI(){
+        $view = new View;
+        $view->parseHTML("TestFetchAPI");
+    }
 }
 ?>
